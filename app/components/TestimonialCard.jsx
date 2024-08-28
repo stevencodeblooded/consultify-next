@@ -16,12 +16,12 @@ const TestimonialCard = ({ name, position, content, ratings, tags }) => (
   <div className={`card mt-3 ${styles.testimonialCard}`}>
     <div className="card-body">
       <div className="row">
-        <div className="col-md-9 mb-3 mb-md-0">
+        <div className={`col-lg-8 mb-3 mb-lg-0 ${styles.contentColumn}`}>
           <h5 className="card-title">{name}</h5>
           <p className="card-subtitle mb-2 text-muted">{position}</p>
-          <p className="card-text">{content}</p>
+          <p className={`card-text ${styles.testimonialContent}`}>{content}</p>
         </div>
-        <div className="col-md-3">
+        <div className={`col-lg-4 ${styles.ratingsColumn}`}>
           <h6>Rating Breakdown</h6>
           {Object.entries(ratings).map(([category, score]) => (
             <div key={category} className="d-flex justify-content-between mb-1">
@@ -32,9 +32,9 @@ const TestimonialCard = ({ name, position, content, ratings, tags }) => (
         </div>
       </div>
     </div>
-    <div className="card-footer">
+    <div className={styles.cardFooter}>
       {tags.map((tag, index) => (
-        <span key={index} className="badge bg-light text-dark me-2">{tag}</span>
+        <span key={index} className={styles.tag}>{tag}</span>
       ))}
     </div>
   </div>
@@ -78,12 +78,13 @@ const Testimonials = () => {
       },
       tags: ["Fintech", "Mobile Wallet Development", "Team Hiring"]
     },
+   
     // Add more testimonials here
   ];
 
   return (
     <section className="py-5">
-        <div className="container mb-3">
+      <div className="container mb-3">
         <div className="row">
           <div className="col-lg-4 mb-4 mb-lg-0">
             <h1 className="fs-4 fw-bold lh-sm">

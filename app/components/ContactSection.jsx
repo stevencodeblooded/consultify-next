@@ -53,7 +53,7 @@ const ContactSection = () => {
                   <div className="col-md-6">
                     <input
                       type="text"
-                      className={`form-control ${styles.formControl}`}
+                      className={`form-control marginMobile ${styles.formControl}`}
                       id="name"
                       placeholder="Your Name"
                     />

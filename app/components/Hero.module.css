@@ -1,19 +1,20 @@
-/* PartnerSection.module.css */
 .partnerSection {
   position: relative;
-  padding-bottom: 30vh; /* Adjust this value to control how much of the image is visible */
+  padding-bottom: 30vh; 
   padding-top: 30px;
 }
 
 .heroTitle {
-  font-size: 2rem; /* Base size for small screens */
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   line-height: 1.2;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .textGreen {
   color: #2fe647;
+  cursor: pointer;
 }
 
 .imageContainer {
@@ -30,20 +31,18 @@
   display: block;
 }
 
-/* Medium screens */
 @media (min-width: 768px) {
   .heroTitle {
     font-size: 3rem;
   }
 }
 
-/* Large screens */
 @media (min-width: 992px) {
   .heroTitle {
     font-size: 4.5rem;
   }
   
   .partnerSection {
-    padding-bottom: 40vh; /* Increase visible portion of the image on larger screens */
+    padding-bottom: 40vh; 
   }
 }
