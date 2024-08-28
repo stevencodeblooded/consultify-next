@@ -59,6 +59,14 @@
   align-items: center;
 }
 
+.greenText {
+  color: #2fe647 !important;
+}
+
+.greenText:hover {
+  color: #20c936 !important; /* Darker shade of green for hover state */
+}
+
 .arrowIcon {
   margin-left: 4px;
   transition: transform 0.3s ease;

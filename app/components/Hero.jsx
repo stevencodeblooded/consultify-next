@@ -4,7 +4,7 @@ import styles from './Hero.module.css';
 
 const PartnerSection = () => {
   return (
-    <section className="partner-section py-5">
+    <section className={styles.partnerSection}>
       <div className="container">
         <div className="row">
           <div className="col-lg-9">
@@ -36,6 +36,13 @@ const PartnerSection = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.imageContainer}>
+        <img 
+          src="assets/hero.svg" 
+          alt="City buildings" 
+          className={styles.fullWidthImage}
+        />
       </div>
     </section>
   );

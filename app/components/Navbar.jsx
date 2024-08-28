@@ -51,7 +51,7 @@ const Navbar = () => {
                 <Link href="#" className={styles.navLink} onClick={toggleNavbar}>Blogs</Link>
               </li>
               <li className={styles.navItem} >
-                <Link href="#" className={`${styles.navLink} ${styles.scheduleCall}`} onClick={toggleNavbar}>
+                <Link href="#" className={`${styles.navLink} ${styles.scheduleCall} ${styles.greenText}`} onClick={toggleNavbar}>
                 | Schedule call
                   <ArrowUpRight className={styles.arrowIcon} size={18} />
                 </Link>
