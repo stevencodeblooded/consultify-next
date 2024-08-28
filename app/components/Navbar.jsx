@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className={`container ${styles.navContainer}`}>
           <div className={styles.navbarHeader}>
             <Link href="/" className="navbar-brand">
-              <Image src="/assets/Logo.png" alt="Logo" width={150} height={50} />
+              <Image src="/assets/logo.svg" alt="Logo" width={150} height={50} />
             </Link>
             <button
               className={`navbar-toggler ${styles.navbarToggler}`}
