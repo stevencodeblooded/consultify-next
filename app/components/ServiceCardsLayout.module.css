@@ -1,0 +1,45 @@
+.service-card-finn {
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.service-card-finn:hover,
+.service-card-finn.selected {
+    border-color: #28a745;
+}
+
+.service-card-finn:hover .service-title,
+.service-card-finn.selected .service-title {
+    color: #28a745;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    flex-grow: 1;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #28a745;
+    transition: all 0.3s ease;
+}
+
+.service-card-finn:hover .arrow-icon {
+    transform: translateX(5px);
+}

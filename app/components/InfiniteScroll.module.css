@@ -1,0 +1,56 @@
+/* InfiniteScroll.module.css */
+.scrollingWrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .scrollingContent {
+    display: flex;
+  }
+  
+  .scrollingWrapperUpper .scrollingContent {
+    animation: scrollLeftToRight 20s linear infinite;
+  }
+  
+  .scrollingWrapperLower .scrollingContent {
+    animation: scrollRightToLeft 20s linear infinite;
+  }
+  
+  .scrollingItem {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    min-width: 150px;
+    flex-shrink: 0;
+  }
+  
+  .scrollingItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  @keyframes scrollLeftToRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }

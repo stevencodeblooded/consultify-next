@@ -1,0 +1,10 @@
+.dashboardContainer {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-block: 30px;
+  }
+  
+  .dashboardImage {
+    object-fit: contain;
+  }

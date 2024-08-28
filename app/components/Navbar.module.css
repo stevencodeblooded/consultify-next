@@ -1,0 +1,16 @@
+.navbar-collapse {
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .navbar-collapse.show {
+    max-height: 500px; /* Adjust this value based on your content */
+  }
+  
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      max-height: none !important;
+      overflow: visible;
+    }
+  }
