@@ -4,7 +4,7 @@ import styles from './InfiniteScroll.module.css';
 
 const InfiniteScroll = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid py-5">
       <div className="container mb-5">
         <div className="row">
           <div className="col-lg-4 mb-4 mb-lg-0">

@@ -1,0 +1,25 @@
+.genCard {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .cardBodyData {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardImgLeft {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .readMore {
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .readMore:hover {
+    text-decoration: underline;
+  }

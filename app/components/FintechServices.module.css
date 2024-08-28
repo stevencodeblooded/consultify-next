@@ -1,0 +1,26 @@
+  .stickyColumn {
+    transition: all 0.3s ease;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 20px;
+  }
+  
+  .readMore {
+    color: #28a745;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  .readMore:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 991px) {
+    .stickyColumn {
+      position: static !important;
+      width: auto !important;
+    }
+  }

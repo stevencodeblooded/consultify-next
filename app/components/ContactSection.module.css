@@ -1,0 +1,46 @@
+.contactContainer {
+    background-color: #f8f8f8;
+  }
+  
+  .contactInfoSection {
+    margin-top: 20px;
+  }
+  
+  .contactInfo {
+    margin-bottom: 20px;
+  }
+  
+  .contactInfo h4 {
+    font-weight: 700;
+  }
+  
+  .contactInfo p {
+    font-size: 13px;
+  }
+  
+  .formControl {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: white;
+    border: 1px solid #ced4da;
+  }
+  
+  .submitBtn {
+    background-color: #00c142;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 40px;
+    border: none;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  .submitBtn:hover {
+    background-color: #00a83a;
+  }
+  
+  @media (max-width: 991px) {
+    .formSection {
+      margin-top: 20px;
+    }
+  }
