@@ -1,51 +1,44 @@
-// InfiniteScroll.js
 import React from 'react';
+import Marquee from "react-fast-marquee";
 import styles from './InfiniteScroll.module.css';
+
+const Rectangle = ({ color }) => (
+  <div className={`${styles.rectangle} ${styles[color]}`}>
+    <div className={styles.topHalf}></div>
+    <div className={styles.bottomHalf}></div>
+  </div>
+);
 
 const InfiniteScroll = () => {
   return (
-    <div className="container-fluid py-5">
-      <div className="container mb-5">
+    <div>
+      <div className='container mt-5'>
         <div className="row">
-          <div className="col-lg-4 mb-4 mb-lg-0">
+            <div className="col-lg-4 mb-4 mb-lg-0">
             <h1 className="fs-4 fw-bold lh-sm">
-              Increase Your Business Revenues With Our Fintech Development
-              Services
+                Increase Your Business Revenues With Our Fintech Development
+                Services
             </h1>
-          </div>
-          <div className="col-lg-8">
+            </div>
+            <div className="col-lg-8">
             <p className="fs-6">
-              We offer comprehensive fintech software development services
-              designed to elevate your business and increase your revenue. As a
-              fintech software development agency, our expertise in end-to-end
-              fintech application design and development ensures that your
-              innovative ideas are transformed into agile and robust
-              applications.
+                We offer comprehensive fintech software development services
+                designed to elevate your business and increase your revenue. As a
+                fintech software development agency, our expertise in end-to-end
+                fintech application design and development ensures that your
+                innovative ideas are transformed into agile and robust
+                applications.
             </p>
-          </div>
+            </div>
         </div>
       </div>
-
-      {/* Upper Row */}
-      <div className={`${styles.scrollingWrapper} ${styles.scrollingWrapperUpper}`}>
-        <div className={styles.scrollingContent}>
-          {[...Array(12)].map((_, index) => (
-            <div key={index} className={styles.scrollingItem}>
-              <img src={`/api/placeholder/150/150`} alt={`Image ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Lower Row */}
-      <div className={`${styles.scrollingWrapper} ${styles.scrollingWrapperLower} mt-3`}>
-        <div className={styles.scrollingContent}>
-          {[...Array(12)].map((_, index) => (
-            <div key={index} className={styles.scrollingItem}>
-              <img src={`/api/placeholder/150/150`} alt={`Image ${index + 1}`} />
-            </div>
-          ))}
-        </div>
+      <div className={styles.marqueeContainer}>
+        <Marquee gradient={false} speed={20} autoFill>
+          <Rectangle color="gray" />
+        </Marquee>
+        <Marquee gradient={false} speed={20} autoFill direction="right">
+          <Rectangle color="gray" />
+        </Marquee>
       </div>
     </div>
   );
